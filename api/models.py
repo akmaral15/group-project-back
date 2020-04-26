@@ -10,3 +10,13 @@ class Food(models.Model):
     description = models.CharField(max_length=900)
     ingredients = models.CharField(max_length=900)
     images = models.CharField(max_length=900)
+
+class User(models.Model):
+    usename = models.TextField()
+    email = models.TextField()
+    password = models.TextField()
+class Manager(models.Model):
+    usename = models.TextField()
+    email = models.TextField()
+    password = models.TextField()
+    
